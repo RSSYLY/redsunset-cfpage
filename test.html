@@ -2,19 +2,76 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
-  integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
-  crossorigin="anonymous"
-/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    :root {
+      --accent: #226997;
+      --main: #333;
+      --light: #666;
+      --lighter: #f3f3f3;
+      --border: #e6e6e6;
+      --cardg: #ffffff;
+      --bg: #f5f5fa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --accent: #3493d1;
+        --main: #f3f3f3;
+        --light: #ececec;
+        --lighter: #666;
+        --border: #e6e6e6;
+        --bg: #303030;
+        --cardg: #424242;
+      }
+    }
+
+    li {
+      color: var(--main);
+    }
+
+    h1 {
+      color: var(--main);
+      padding: 20px;
+      margin: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--accent);
+    }
+
+
+    body {
+      background-color: var(--bg);
+    }
+  </style>
 </head>
 
 <body>
-::CAPTCHA_BOX::
+  <div style="background-color: var(--cardg);
+  box-shadow: var 5px;
+  border-radius: 10px">
+    <h1 style="margin-top: calc(20vh);">安全验证</h1>
+    <p>
+    <h1 style="margin-top: -40px;">请进行人机验证以访问<span id="domainName"></span></h1>
+    </p>
+    <br>
+    ::CAPTCHA_BOX::
+    <br>
+
+
+    <div style="padding: 20px;">
+      <p style="color: var(--light);">通过人机验证以证明您不是机器人，完成验证后即可访问本站</p>
+      <ul>
+        <li>Cloudflare的事件ID: ::RAY_ID::</li>
+        <li>你的IP: ::CLIENT_IP::</li>
+        <li>Performance &amp; Security by Cloudflare</li>
+      </ul>
+    </div>
+  </div>
 </body>
 
 </html>
