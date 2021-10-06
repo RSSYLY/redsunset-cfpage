@@ -10,7 +10,7 @@
       --accent: #226997;
       --main: #333;
       --light: #666;
-      --lighter: #f3f3f3;
+      --lighter: #9c9c9c;
       --border: #e6e6e6;
       --cardg: #ffffff;
       --bg: #f5f5fa;
@@ -38,6 +38,12 @@
       margin: 10px;
     }
 
+    h2 {
+      color: var(--main);
+      padding: 20px;
+      margin: 10px;
+    }
+
     a {
       text-decoration: none;
       color: var(--accent);
@@ -53,24 +59,29 @@
 <body>
   <div style="background-color: var(--cardg);
   box-shadow: var 5px;
-  border-radius: 10px">
-    <h1 style="margin-top: calc(20vh);">安全验证</h1>
+  border-radius: 10px;margin: auto;
+    width: 90%;
+    max-width: 700px;">
+    <h1 style="margin-top: calc(10vh);">安全验证 <br><span style="color: var(--lighter);font-size: 70%;">Safety
+        Serification</span></h1>
     <p>
-    <h1 style="margin-top: -40px;">请进行人机验证以访问<span id="domainName"></span></h1>
-    </p>
-    <br>
-    ::CAPTCHA_BOX::
-    <br>
+    <h2 style="margin-top: -40px;">请进行人机验证以访问本站 <br><span style="color: var(--lighter);font-size: 60%;">Please pass the
+        man-machine verification to access this site</span></h1>
+      </p>
+      <br>
+      <div style=" padding: 20px;">::CAPTCHA_BOX::</div>
+      <br>
 
 
-    <div style="padding: 20px;">
-      <p style="color: var(--light);">通过人机验证以证明您不是机器人，完成验证后即可访问本站</p>
-      <ul>
-        <li>Cloudflare的事件ID: ::RAY_ID::</li>
-        <li>你的IP: ::CLIENT_IP::</li>
-        <li>Performance &amp; Security by Cloudflare</li>
-      </ul>
-    </div>
+      <div style="padding: 20px;">
+        <p style="color: var(--light);">Security by Cloudflare</p>
+        <ul>
+          <li>Cloudflare ID: ::RAY_ID::</li>
+          <li>IP: ::CLIENT_IP::</li>
+        </ul>
+        <p style="color: var(--light);">遇到问题？进入我们的<a href="https://t.me/bocc_group">Telegram群组</a>了解更多。</p>
+        <p style="color: var(--light);">© 余晖无垠 Redsunsets Ins.</p>
+      </div>
   </div>
 </body>
 
