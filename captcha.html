@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hans">
 
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+      <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,900" rel="stylesheet">
+  <title>Safety Serification - Redsunsets Ins.</title>
   <style>
     :root {
       --accent: #226997;
@@ -14,6 +18,7 @@
       --border: #e6e6e6;
       --cardg: #ffffff;
       --bg: #f5f5fa;
+      --bgimg: url("https://u3.cdn.rssins.net/pic/blog/2021/20211007100359443.jpg")
     }
 
     @media (prefers-color-scheme: dark) {
@@ -25,6 +30,7 @@
         --border: #e6e6e6;
         --bg: #303030;
         --cardg: #424242;
+        --bgimg: url("https://u3.cdn.rssins.net/pic/blog/2021/202110011641953.webp")
       }
     }
 
@@ -49,9 +55,10 @@
       color: var(--accent);
     }
 
-
     body {
-     
+      background-image: var(--bgimg);
+      background-repeat: no-repeat;
+      background-attachment: fixed
     }
   </style>
 </head>
@@ -61,27 +68,25 @@
   box-shadow: var 5px;
   border-radius: 10px;margin: auto;
     width: 90%;
-    max-width: 700px;">
+    max-width: 700px;opacity: 0.8">
     <h1 style="margin-top: calc(10vh);">安全验证 <br><span style="color: var(--lighter);font-size: 70%;">Safety
         Serification</span></h1>
     <p>
-    <h2 style="margin-top: -40px;">请进行人机验证以访问本站 <br><span style="color: var(--lighter);font-size: 60%;">Please pass the
-        man-machine verification to access this site</span></h1>
-      </p>
-      <br>
-      <div style=" padding: 20px;">::CAPTCHA_BOX::</div>
-      <br>
-
-
-      <div style="padding: 20px;">
-        <p style="color: var(--main);">Security by Cloudflare</p>
-        <ul>
-          <li>Cloudflare ID: ::RAY_ID::</li>
-          <li>IP: ::CLIENT_IP::</li>
-        </ul>
-        <p style="color: var(--main);">遇到问题？进入我们的<a href="https://t.me/bocc_group">Telegram群组</a>了解更多。<br><span style="color: var(--lighter);font-size: 80%;">Encounter problems? Enter our <a href="https://t.me/bocc_group">Telegram group.</a></span></p>
-        <p style="color: var(--main);">© 余晖无垠 Redsunsets Ins.</p>
-      </div>
+      <h2 style="margin-top: -40px;">请进行人机验证以访问本站 <br><span style="color: var(--lighter);font-size: 60%;">Please pass the
+          man-machine verification to access this site</span></h1>
+    </p>
+    <br>
+    <div style=" padding: 20px;">::CAPTCHA_BOX::</div>
+    <br>
+    <div style="padding: 20px;">
+      <p style="color: var(--main);margin-top: -40px;">Security by Cloudflare</p>
+      <ul>
+        <li>Cloudflare ID: ::RAY_ID::</li>
+        <li>IP: ::CLIENT_IP::</li>
+      </ul>
+      <p style="color: var(--main);">遇到问题？进入我们的<a href="https://t.me/bocc_group">Telegram群组</a>了解更多。<br><span style="color: var(--lighter);font-size: 80%;">Encounter problems? Enter our <a href="https://t.me/bocc_group">Telegram group.</a></span></p>
+      <p style="color: var(--main);">© 余晖无垠 Redsunsets Ins.</p>
+    </div>
   </div>
 </body>
 
